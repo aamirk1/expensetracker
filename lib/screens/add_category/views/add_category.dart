@@ -36,6 +36,25 @@ class _AddCategoryState extends State<AddCategory> {
           isExpanded ? _buildIconGrid() : Container(),
           SizedBox(height: 16),
           ColorFormField(),
+          SizedBox(height: 16),
+          SizedBox(
+                width: double.infinity,
+                height: kToolbarHeight,
+                child: TextButton(
+                  onPressed: () {
+                    // create category store logic
+                    Navigator.pop(context);
+                  },
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.black,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12))),
+                  child: Text(
+                    'Save',
+                    style: TextStyle(fontSize: 22, color: Colors.white),
+                  ),
+                ),
+              )
         ],
       ),
     );

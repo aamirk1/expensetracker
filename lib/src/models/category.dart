@@ -1,0 +1,24 @@
+import 'package:expensetracker/src/entities/category_entity.dart';
+
+class Category {
+  String categoryId;
+  String name;
+  int totalExpenses;
+  String icon;
+  String color;
+
+  Category({
+    required this.categoryId,
+    required this.name,
+    required this.totalExpenses,
+    required this.icon,
+    required this.color,
+  });
+
+
+static final empty = Category(categoryId: '', name: '', totalExpenses: 0, icon: '', color: '');
+
+ CategoryEntity toEntity(){
+    return CategoryEntity(categoryId:categoryId,name:name,totalExpenses:totalExpenses,icon:icon,color:color);
+  }
+}
