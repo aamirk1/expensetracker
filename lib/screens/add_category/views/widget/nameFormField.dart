@@ -2,15 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NameFormField extends StatelessWidget {
-  const NameFormField({super.key});
-
+  NameFormField({super.key, required this.categoryNameController});
+  TextEditingController categoryNameController;
   @override
   Widget build(BuildContext context) {
     return _buildNameFormField();
   }
+
   Widget _buildNameFormField() {
     return TextFormField(
-      // controller: dateController,
+      controller: categoryNameController,
       textAlignVertical: TextAlignVertical.center,
       decoration: InputDecoration(
         isDense: true,
