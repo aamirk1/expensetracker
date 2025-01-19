@@ -10,7 +10,6 @@ import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_e
 import 'package:expensetracker/screens/add_expense/views/add_expense.dart';
 import 'package:expensetracker/screens/home/views/main_screen.dart';
 import 'package:expensetracker/screens/stats/stats.dart';
-import 'package:expensetracker/src/models/category.dart';
 import 'package:expensetracker/src/models/expense.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

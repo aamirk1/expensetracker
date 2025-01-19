@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:expensetracker/src/models/category.dart';
 import 'package:expensetracker/src/models/expense.dart';
 
 sealed class GetExpenseState extends Equatable{
