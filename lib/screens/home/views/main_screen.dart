@@ -1,11 +1,14 @@
 import 'dart:math';
 
 import 'package:expensetracker/data/data.dart';
+import 'package:expensetracker/src/models/expense.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+  final List<Expense> expenses;
+   const MainScreen({super.key,required this.expenses});
 
   @override
   Widget build(BuildContext context) {
@@ -231,7 +234,7 @@ class MainScreen extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
-                itemCount: transactionData.length,
+                itemCount: expenses.length,
                 itemBuilder: (context, int i) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 16.0),
@@ -254,17 +257,18 @@ class MainScreen extends StatelessWidget {
                                       width: 50,
                                       height: 50,
                                       decoration: BoxDecoration(
-                                          color: transactionData[i]['color'],
+                                          color: Color(expenses[i].category.color),
                                           shape: BoxShape.circle),
                                     ),
-                                    transactionData[i]['icon'],
+                                    Image.asset('assets/${expenses[i].category.icon}.png',scale: 2,color: Colors.white,),
+                                    
                                   ],
                                 ),
                                 SizedBox(
                                   width: 12,
                                 ),
                                 Text(
-                                  transactionData[i]['name'],
+                                  expenses[i].category.icon,
                                   style: TextStyle(
                                       color: Theme.of(context)
                                           .colorScheme
@@ -278,7 +282,7 @@ class MainScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
-                                  transactionData[i]['totalAmount'],
+                                  "Rs ${expenses[i].amount}.00",
                                   style: TextStyle(
                                       color: Theme.of(context)
                                           .colorScheme
@@ -287,7 +291,7 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w400),
                                 ),
                                 Text(
-                                  transactionData[i]['date'],
+                                  DateFormat('dd/MM/yyyy').format(expenses[i].date),
                                   style: TextStyle(
                                       color: Theme.of(context)
                                           .colorScheme

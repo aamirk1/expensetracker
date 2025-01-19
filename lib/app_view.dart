@@ -1,5 +1,9 @@
+import 'package:expensetracker/expense_repository.dart';
+import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_bloc.dart';
+import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_event.dart';
 import 'package:expensetracker/screens/home/views/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
@@ -19,7 +23,9 @@ class MyAppView extends StatelessWidget {
           outline: Colors.grey,
         ),
       ),
-      home: HomeScreen(),
+      home: BlocProvider(
+        create: (context) => GetExpenseBloc(FirebaseExpenseRepo())..add(GetExpense()),
+        child: HomeScreen()),
     );
   }
 }
