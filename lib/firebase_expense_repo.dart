@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:expensetracker/expense_repository.dart';
-import 'package:expensetracker/src/expense_repo.dart';
 import 'package:expensetracker/src/models/category.dart';
 import 'package:expensetracker/src/models/expense.dart';
 

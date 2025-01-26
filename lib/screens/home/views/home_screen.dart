@@ -1,16 +1,16 @@
 import 'dart:math';
 
 import 'package:expensetracker/expense_repository.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_category_bloc/create_category_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_expense_bloc/create_expense_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_category_bloc/get_categories_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_category_bloc/get_categories_event.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_state.dart';
+import 'package:expensetracker/src/blocs/create_category_bloc/create_category_bloc.dart';
+import 'package:expensetracker/src/blocs/create_expense_bloc/create_expense_bloc.dart';
+import 'package:expensetracker/src/blocs/get_category_bloc/get_categories_bloc.dart';
+import 'package:expensetracker/src/blocs/get_category_bloc/get_categories_event.dart';
 import 'package:expensetracker/screens/add_expense/views/add_expense.dart';
 import 'package:expensetracker/screens/home/views/main_screen.dart';
 import 'package:expensetracker/screens/stats/stats.dart';
-import 'package:expensetracker/src/models/expense.dart';
+import 'package:expensetracker/src/blocs/get_expense_bloc/get_expense_bloc.dart';
+import 'package:expensetracker/src/blocs/get_expense_bloc/get_expense_state.dart';
+import 'package:expensetracker/src/models/models.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

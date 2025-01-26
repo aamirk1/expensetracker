@@ -12,7 +12,7 @@ sealed class CreateExpenseEvent extends Equatable{
 class CreateExpense extends CreateExpenseEvent{
   final Expense expense;
 
-  CreateExpense(this.expense);
+  const CreateExpense(this.expense);
   
   
   @override

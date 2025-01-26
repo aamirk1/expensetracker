@@ -1,8 +1,8 @@
-import 'package:expensetracker/screens/add_category/blocs/create_expense_bloc/create_expense_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_expense_bloc/create_expense_event.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_expense_bloc/create_expense_state.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_category_bloc/get_categories_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_category_bloc/get_categories_state.dart';
+import 'package:expensetracker/src/blocs/create_expense_bloc/create_expense_bloc.dart';
+import 'package:expensetracker/src/blocs/create_expense_bloc/create_expense_event.dart';
+import 'package:expensetracker/src/blocs/create_expense_bloc/create_expense_state.dart';
+import 'package:expensetracker/src/blocs/get_category_bloc/get_categories_bloc.dart';
+import 'package:expensetracker/src/blocs/get_category_bloc/get_categories_state.dart';
 import 'package:expensetracker/screens/add_expense/views/category_creation.dart';
 import 'package:expensetracker/screens/add_expense/views/widget/input_amount_field.dart';
 import 'package:expensetracker/src/models/category.dart';

@@ -1,6 +1,6 @@
-import 'package:expensetracker/screens/add_category/blocs/create_category_bloc/create_category_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_category_bloc/create_category_event.dart';
-import 'package:expensetracker/screens/add_category/blocs/create_category_bloc/create_category_state.dart';
+import 'package:expensetracker/src/blocs/create_category_bloc/create_category_bloc.dart';
+import 'package:expensetracker/src/blocs/create_category_bloc/create_category_event.dart';
+import 'package:expensetracker/src/blocs/create_category_bloc/create_category_state.dart';
 import 'package:expensetracker/screens/add_expense/views/widget/categoriesIcon.dart';
 import 'package:expensetracker/src/models/category.dart';
 import 'package:flutter/cupertino.dart';

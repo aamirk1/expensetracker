@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:expensetracker/expense_repository.dart';
-import 'package:expensetracker/src/models/expense.dart';
+import 'package:expensetracker/src/models/models.dart';
 
 import 'get_expense_event.dart';
 import 'get_expense_state.dart';

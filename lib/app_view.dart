@@ -1,9 +1,12 @@
 import 'package:expensetracker/expense_repository.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_bloc.dart';
-import 'package:expensetracker/screens/add_category/blocs/get_expense_bloc/get_expense_event.dart';
+import 'package:expensetracker/src/blocs/get_user_bloc/get_user_bloc.dart';
+import 'package:expensetracker/src/blocs/get_user_bloc/get_user_event.dart';
 import 'package:expensetracker/screens/home/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'src/blocs/get_expense_bloc/get_expense_bloc.dart';
+import 'src/blocs/get_expense_bloc/get_expense_event.dart';
 
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
